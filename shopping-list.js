@@ -6,8 +6,8 @@ var ikea = prompt(`Hey ${newName}! Fancy shopping at Ikea today?...`, "y / n");
 
 if (ikea == 'y') {
     alert("Wonderful. Let's do this!");
-    var money = prompt("How much (£) do you have to spend?", "99");
-    if (money < 100) { // if spending less than £100
+    var money = prompt("How much of your £100 do you want to spend?", "100");
+    if (money <= 100) { // if spending £100 or less
         alert("OK. Let's go to the Market Hall.\nThink of what you want to buy...");
         var shoppingList = [];
         var firstItem = prompt("What's your first item?", "first item");
